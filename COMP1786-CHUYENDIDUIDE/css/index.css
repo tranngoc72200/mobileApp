@@ -1,0 +1,256 @@
+* {
+  -webkit-tap-highlight-color: transparent; /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+  text-shadow: none !important;
+}
+
+body {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change "none" to "text" */
+  font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 12px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  /* Padding to avoid the "unsafe" areas behind notches in the screen */
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-left, 0px)
+    env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px);
+}
+
+.warning {
+  text-align: center;
+  color: #000000;
+}
+
+.ui-page {
+  background-color: rgb(144, 185, 193);
+}
+
+.ui-page .ui-header,
+.ui-page .ui-footer .ui-navbar ul li a {
+  width: 100%;
+  height: 50px;
+  color: rgb(252, 0, 0);
+  background-color: #7a93ab;
+  border-color: rgb(255, 255, 255);
+}
+
+.active,
+.ui-select .ui-btn:hover {
+  background-color: #7a93ab !important;
+  color: white !important;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input {
+  height: 35px;
+}
+
+.ui-input-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #000000 !important;
+  font-size: 20px;
+}
+
+.ui-input-text .ui-icon-delete::after {
+  background-color: #ff0101;
+}
+
+.ui-select .ui-btn {
+  border: 1px solid white;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #7a93ab;
+  color: white;
+  font-weight: normal;
+}
+
+.ui-select .ui-icon-carat-d::after {
+  background-color: transparent;
+}
+
+.ui-focus {
+  box-shadow: 0px 0px 5px 0px #7a93ab !important;
+  -moz-box-shadow: 0px 0px 5px 0px #7a93ab !important;
+  -webkit-box-shadow: 0px 0px 5px 0px #7a93ab !important;
+}
+
+.small-text {
+  color: #000000;
+  font-size: 22px !important;
+  margin-top: 20px !important;
+}
+
+.green {
+  background-color: #7a93ab !important;
+  color: white !important;
+  font-weight: normal !important;
+}
+
+.red {
+  background-color: red !important;
+  color: white !important;
+  font-weight: normal !important;
+}
+
+#frm-confirm table {
+  margin: 5px;
+}
+
+#frm-confirm th,
+#frm-confirm td {
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 10px;
+  height: 25px;
+}
+
+#frm-confirm th {
+  background-color: #7a93ab;
+  color: white;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+#detail th,
+#detail td {
+  padding: 5px 10px;
+}
+
+#menu-right {
+  float: right;
+  margin-right: 0.5em;
+}
+
+.transparent {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#page-list #btn-filter-popup {
+  background-color: #7a93ab !important;
+  color: white !important;
+  font-weight: normal !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: none !important;
+  width: 40px !important;
+  height: 37px;
+  margin-bottom: 8px;
+  background-image: url("../img/icon-filter.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#page-list #btn-reset {
+  background-color: #7a93ab !important;
+  color: white !important;
+  font-weight: normal !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: none !important;
+  width: 40px !important;
+  height: 37px;
+  margin-bottom: 8px;
+}
+
+#page-detail .btn-option {
+  border: none !important;
+  background-color: transparent !important;
+  background-image: url("../img/icon-three-dots.png");
+  background-size: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#page-home .shortcut {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2vw;
+}
+
+#page-home .shortcut-item {
+  width: 32vw;
+  margin-right: 2vw;
+}
+
+#page-home .shortcut .ui-btn {
+  font-size: 13px;
+  margin: 0;
+  background-color: white;
+  font-weight: normal;
+  border-radius: 0;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: 1px solid #000000;
+}
+
+#page-detail #frm-add-expense .ui-btn,
+#page-detail #frm-update-expense .ui-btn {
+  border: none;
+  margin: 0;
+}
+
+.avatar {
+  border: 1px solid #000000;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.end-list {
+  text-align: center;
+  color: gray;
+  font-size: 11px;
+}
+
+.list {
+  border-top: 1px solid #000000;
+  padding: 5px 0px;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.list th {
+  padding-right: 5px;
+}
+
+.list-date {
+  text-align: center;
+  height: 25px;
+  background-color: #7a93ab;
+  color: white;
+  line-height: 25px;
+}
+
+#page-detail #expense #message {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
